@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="scss/bootstrap.css">
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body class="bg-light">
+    <div class="container">
+        <div class="container">
+            <main>
+                <!-- Header section code start from here -->
+                <div class="py-5 text-center">
+                    <img src="images/logo.png" alt="" width="72" height="72" class="d-block mx-auto mb-4">
+                    <h2>Checkout Form</h2>
+                    <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda suscipit
+                        repellat incidunt quos nam facilis aperiam quisquam, eaque deleniti error a soluta at, dolor
+                        quibusdam consectetur nostrum voluptas repellendus praesentium!</p>
+                </div>
+                <!-- Header section code End's here -->
+
+                <div class="row g-3">
+
+                    <!-- items cart code start from here -->
+                    <div class="col-md-5 col-lg-4 order-md-last">
+                        <h4 class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="text-muted">Your cart</span>
+                            <span class="badge bg-warning rounded-pill">3</span>
+                        </h4>
+                        <ul class="list-group mb-3">
+                            <li class="list-group-item d-flex justify-content-between lh-sm border-info">
+                                <img src="images/iphone.png" alt="" width="40" height="40" class="me-2">
+                                <div class="me-2">
+                                    <h6 class="my-0">Iphone <small class="text-muted">Blast past fast on the incredible
+                                            iPhone 12.</small></h6>
+                                </div>
+                                <span class="text-muted">&pound;850</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between lh-sm border-info">
+                                <img src="images/apple-watch.jpeg" alt="" width="40" height="40" class="me-2">
+                                <div class="me-2">
+                                    <h6 class="my-0">Apple Watch Series 3<small class="text-muted">Apple Watch Series 3
+                                            features GPS, an altimeter and a powerful processor.</small></h6>
+                                </div>
+                                <span class="text-muted">&pound;300</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between lh-sm border-info">
+                                <img src="images/macbookair.jpeg" alt="" width="40" height="40" class="me-2">
+                                <div class="me-2">
+                                    <h6 class="my-0">MacBook Air<small class="text-muted">New Apple MacBook Air with
+                                            Apple M1 Chip (13-inch, 8GB RAM, 256GB SSD) - Gold (Latest Model)</small>
+                                    </h6>
+                                </div>
+                                <span class="text-muted">&pound;1300</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between bg-light">
+                                <div class="text-success">
+                                    <h6 class="my-0">Prome Code</h6>
+                                    <small class="text-warning fw-bold">NEWYEARDISCOUNT</small>
+                                </div>
+                                <span class="text-success">-&pound;200</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between bg-light">
+                                <div class="me-2">
+
+                                    <span>Total(&pound;)</span>
+                                </div>
+                                <span class="fw-bold">-&pound;2250</span>
+                            </li>
+                        </ul>
+                        <form>
+                            <div class="input-group">
+                                <input type="text" placeholder="Prome Code" class="form-control">
+                                <button class="btn btn-warning" type="submit">Redeem</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- items cart code End's here -->
+
+
+                    <!-- Billing address code start from here -->
+                    <div class="col-md-7 col-md-8">
+                        <h4 class="mb-3">Billing address</h4>
+                        <form class="needs-validation" novalidate>
+                            <div class="row g-3">
+                                <div class="col-sm-6">
+                                    <label class="form-label">First name</label>
+                                    <input type="text" class="form-control" id="firstname" required>
+                                    <div class="invalid-feedback">
+                                        valid first name is required.
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="form-label">Last name</label>
+                                    <input type="text" class="form-control" id="lastname" required>
+                                    <div class="invalid-feedback">
+                                        valid last name is required.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row g-3 mt-2">
+                                <div class="col-sm-12">
+                                    <label class="form-label">Email</label>
+                                    <input type="email" class="form-control" placeholder="you@example.com" id="email"
+                                        required>
+                                    <div class="invalid-feedback">
+                                        valid email is required.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row g-3 mt-2">
+                                <div class="col-sm-12">
+                                    <label class="form-label">Address</label>
+                                    <input type="text" class="form-control" placeholder="1234 Main St"
+                                        id="streetaddress" required>
+                                    <div class="invalid-feedback">
+                                        valid email is required.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row g-3 mt-2">
+                                <div class="col-sm-12">
+                                    <label class="form-label">Address 2 <span
+                                            class="text-muted">(Optional)</span></label>
+                                    <input type="email" class="form-control" placeholder="you@example.com" id="lastname"
+                                        required>
+                                    <div class="invalid-feedback">
+                                        valid email is required.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row g-3 mt-2">
+                                <div class="col-sm-4">
+                                    <label class="form-label">Country</label>
+                                    <select name="" id="country" class="form-select">
+                                        <option selected> Choose...</option>
+                                        <option value="UK">UK</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        valid email is required.
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="form-label">City</label>
+                                    <select name="" id="city" class="form-select">
+                                        <option selected> Choose...</option>
+                                        <option value="UK">London</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        valid email is required.
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="form-label">Postcode</label>
+                                    <input type="text" name="" id="postcode" class="form-control" required>
+                                    <div class="invalid-feedback">
+                                        valid email is required.
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="my-4">
+
+                            <div class="form-check">
+                                <input type="checkbox" id="checkbox1" class="form-check-input">
+                                <label for="" class="form-label">Shipping address is the same as my billing
+                                    address</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" id="checkbox2" class="form-check-input">
+                                <label for="" class="form-label">Save this information for next time</label>
+                            </div>
+                            <hr class="my-4">
+                            <h4 class="mb-3">Payment</h4>
+                            <div class="my-3">
+                                <div class="form-check">
+                                    <input type="radio" id="creditcard" class="form-check-input" name="paymentMethod"
+                                        checked required>
+                                    <label for="credit" class="form-label">Credit Card</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" id="debitcard" class="form-check-input" name="paymentMethod"
+                                        checked required>
+                                    <label for="debit" class="form-label">Debit Card</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" id="paypalcard" class="form-check-input" name="paymentMethod"
+                                        checked required>
+                                    <label for="paypal" class="form-label">Paypal Card</label>
+                                </div>
+                            </div>
+                            <div class="row gy-3">
+                                <div class="col-md-6">
+                                    <label for="cc-name" class="form-label">Name on card</label>
+                                    <input type="text" class="form-control" id="cc-name" required>
+                                    <small class="text-muted">Full name as displayed on card</small>
+                                    <div class="invalid-feedback">
+                                        Name on card is required.
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="cc-number" class="form-label">Credit card number</label>
+                                    <input type="text" class="form-control" id="cc-number" required>
+                                    <div class="invalid-feedback">
+                                        Credit Card number is required.
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="cc-expiration" class="form-label">Expiration</label>
+                                    <input type="text" class="form-control" id="cc-expiration" required>
+                                    <div class="invalid-feedback">
+                                        Expiration date is required.
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="cc-cvv" class="form-label">CVV</label>
+                                    <input type="text" class="form-control" id="cc-cvv" required>
+                                    <div class="invalid-feedback">
+                                        Security code is required.
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="my-4">
+                            <button class="w-100 btn btn-primary btn-lg" type="submit"> Continue to checkout</button>
+
+                        </form>
+                    </div>
+                    <!-- Billing address code End's here -->
+                </div>
+            </main>
+
+
+<!-- footer code start from here -->
+            <footer class="my-5 pt-5 text-muted text-center">
+                <p class="mb-1">&copy;<span class="year">Company Name</span></p>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#" class="text-decoration-none">Privacy</a></li>
+                    <li class="list-inline-item"><a href="#" class="text-decoration-none">Terms</a></li>
+                    <li class="list-inline-item"><a href="#" class="text-decoration-none">Support</a></li>
+
+                </ul>
+            </footer>
+            <!-- footer code End's here -->
+        </div>
+    </div>
+
+</body>
+
+</html>
